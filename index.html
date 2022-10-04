@@ -12,30 +12,29 @@
 </head>
 <body>
     <main>
-        <div class="container-sm mt-3 mt-md-5">
-            <h1 class="mb-4">Lista de Tareas</h1>
-            <div class="shadow border-rounded p-5">
-                <div>
-                    <form id="new_form" action="/" method="POST">
-                        <div class="form-group mb-3">
-                            <input class="form-control" placeholder="Título" required name="titulo" class="form-control" type="text">
-                        </div>
-                        <div class="form-group mb-3">
-                            <textarea class="form-control" placeholder="Descripción" required name="descripcion" id="" cols="30" rows="5"></textarea>
-                        </div>
-                        <input name="index" type="hidden">
-                        <button class="btn btn-success" type="submit">Agregar Tarea</button>
-                    </form> 
-                </div>
-            </div>
-            <BR></BR>
-            <HR></HR>
-            <BR></BR>
-            <div class="shadow border-rounded p-5">
-                <div id="lista">
-                    
-                </div>
-            </div>
+         <div class="container mt-3 mt-md-5" >
+            <h1 class="mb-4" style="text-align: center;">Lista de Tareas</h1>
+			<div style="text-align: center;" class="row justify-content-between">
+				<div class="shadow border-rounded p-5 col-4" id="form">
+					<div>
+						<form id="new_form" action="/" method="POST">
+							<div class="form-group mb-3">
+								<input class="form-control" placeholder="Título" required name="titulo" class="form-control" type="text">
+							</div>
+							<div class="form-group mb-3">
+								<textarea class="form-control" placeholder="Descripción" required name="descripcion" id="" cols="30" rows="5"></textarea>
+							</div>
+							<input name="index" type="hidden">
+							<button class="btn btn-success" type="submit">Agregar Tarea</button>
+						</form> 
+					</div>
+				</div>
+				<div class="shadow border-rounded p-5 col-7" id="contenedor-lista">
+					<div id="lista">
+						
+					</div>
+				</div>
+			</div>
         </div>
         <!-- Modal -->
         <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">

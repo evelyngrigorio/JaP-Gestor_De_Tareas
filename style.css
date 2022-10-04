@@ -1,4 +1,17 @@
 #lista {
-    max-height:500px;
     overflow:auto;
+	background-color: #FFFFFF;
+}
+
+body{
+	background-color: #E3F7FB;
+}
+
+#form{
+	background-color: #FFFFFF;
+}
+
+#contenedor-lista{
+	background-color: #FFFFFF;
+	margin: auto;
 }
